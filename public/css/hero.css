@@ -1,0 +1,45 @@
+/* Styling for the Hero section */
+.hero {
+  background-image: url("/images/background.jpg"); /* Replace with your own image  */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%; /* Full viewport height */
+  color: #fff; /* White text color */
+  padding: 30px;
+}
+
+/* Styling for the Hero text */
+.hero-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for contrast */
+}
+
+.hero-text h1 {
+  font-size: 72px; /* Large font size for the main title */
+  font-weight: bold;
+  margin: 0;
+  color: #ff5722; /* Vibrant orange color */
+}
+
+#hero-description {
+  font-size: 24px; /* Larger font size for description */
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #ff5722; /* Vibrant orange button color */
+  color: #fff;
+  font-size: 20px;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff4511; /* Darker orange on hover */
+}

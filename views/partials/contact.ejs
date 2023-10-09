@@ -1,0 +1,42 @@
+<section class="contact">
+  <h2 id="contact-heading">Contact Us</h2>
+  <p class="contact-description">
+    If you have any questions or need assistance, please don't hesitate to reach
+    out to us. We're here to help!
+  </p>
+  <div class="contact-info">
+    <p class="contact-item" id="email">
+      <strong>Email:</strong> info@yourgymname.com
+    </p>
+    <p class="contact-item" id="phone">
+      <strong>Phone:</strong> (123) 456-7890
+    </p>
+    <p class="contact-item" id="address">
+      <strong>Address:</strong> 123 Fitness Street, City, State, Zip
+    </p>
+  </div>
+  <div class="contact-form">
+    <h3 class="form-heading">Contact Form</h3>
+    <form action="/contact" method="POST">
+      <!-- Add contact form fields with appropriate classes and IDs -->
+      <input
+        type="text"
+        name="name"
+        id="contact-name"
+        placeholder="Your Name"
+      />
+      <input
+        type="email"
+        name="email"
+        id="contact-email"
+        placeholder="Your Email"
+      />
+      <textarea
+        name="message"
+        id="contact-message"
+        placeholder="Your Message"
+      ></textarea>
+      <button type="submit" id="contact-submit">Send</button>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Gym Name</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/hero.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/services.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/testimonials.css" />
+    <link rel="stylesheet" href="/css/textAnimation.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">
+        <a href="/"><Span>S</Span><Span>T</Span><Span>G</Span></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/register">Roll-in</a></li>
+          <!-- Add more navigation links as needed -->
+        </ul>
+      </nav>
+    </header>
+    <section id="allSections">
+      <!-- Conditional Partial -->
+      <% const partialsMap = {"hero":"partials/hero.ejs", 'about':
+      'partials/about.ejs', 'services': 'partials/services.ejs', 'testimonials':
+      'partials/testimonials.ejs', 'blog': 'partials/blog.ejs', 'contact':
+      'partials/contact.ejs' }; const partialPath = partialsMap[partial]; if
+      (partialPath) { %> <%- include(partialPath) %> <% } else { %>
+      <!-- Handle cases for unknown or default page -->
+      <p>Page not found</p>
+      <% } %>
+    </section>
+    <footer class="footer">
+      <!-- Include footer content here -->
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+      <!-- Add social media links and copyright information here -->
+      <script src="/js/app.js" defer></script>
+      <script src="/js/textAnimator.js" defer></script>
+    </footer>
+  </body>
+</html>
