@@ -8,7 +8,7 @@ const passport = require("passport");
 
 require("dotenv").config();
 //CONNECTION WITH DATABASE==========================================\
-mongoose.connect(process.env.MONGO_SERVER, {
+mongoose.connect("mongodb://localhost/gym_website", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: false }));
 app.use(
   session({
-    secret: process.env.SECRET_CODE,
+    secret: "MIGYMWEBSITE",
     saveUninitialized: false,
     resave: false,
   })
