@@ -1,0 +1,44 @@
+{
+    "name": "my-vercel-project",
+    "version": 2,
+    "builds": [
+        {
+            "src": "routes/index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/*",
+            "dest": "routes/mainRouter.js"
+        },
+        {
+            "src": "/about",
+            "dest": "routes/mainRouter.js"
+        },
+        {
+            "src": "/services",
+            "dest": "routes/mainRouter.js"
+        },
+        {
+            "src": "/testimonials",
+            "dest": "routes/mainRouter.js"
+        },
+        {
+            "src": "/contact",
+            "dest": "routes/mainRouter.js"
+        },
+        {
+            "src": "/blog",
+            "dest": "routes/mainRouter.js"
+        },
+        {
+            "src": "/views/(.*)",
+            "dest": "views/$1"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "views/main.ejs"
+        }
+    ]
+}
