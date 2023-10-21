@@ -7,6 +7,17 @@ const session = require("express-session");
 const passport = require("passport");
 
 require("dotenv").config();
+
+// Check if the app is running on Vercel or locally
+const isVercelEnvironment = process.env.NODE_ENV === "production";
+
+// Set the views directory based on the environment
+if (isVercelEnvironment) {
+  app.set("views", "/var/task/views");
+} else {
+  app.set("views", path.join(__dirname, "views"));
+}
+
 //CONNECTION WITH DATABASE==========================================\
 mongoose.connect("mongodb://localhost/gym_website", {
   useNewUrlParser: true,
@@ -25,9 +36,9 @@ process.on("SIGINT", () => {
     process.exit(0);
   });
 });
+
 // ALL middleWares configuration====================================
 app.set("view engine", "ejs");
-app.set("views", "/var/task/views");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: false }));
 app.use(
