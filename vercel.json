@@ -8,8 +8,48 @@
     ],
     "routes": [
         {
-            "src": "/.*",
-            "dest": "server.js"
+            "src": "/api/main/.*",
+            "dest": "/routes/main.js"
+        },
+        {
+            "src": "/api/login/.*",
+            "dest": "/routes/login.js"
+        },
+        {
+            "src": "/api/registration/.*",
+            "dest": "/routes/registration.js"
+        },
+        {
+            "src": "/api/dashboard/.*",
+            "dest": "/routes/dashboard.js"
+        },
+        {
+            "src": "/",
+            "dest": "/routes/main.js"
+        },
+        {
+            "src": "/about",
+            "dest": "/routes/main.js"
+        },
+        {
+            "src": "/services",
+            "dest": "/routes/main.js"
+        },
+        {
+            "src": "/testimonials",
+            "dest": "/routes/main.js"
+        },
+        {
+            "src": "/contact",
+            "dest": "/routes/main.js"
+        },
+        {
+            "src": "/blog",
+            "dest": "/routes/main.js"
+        },
+        {
+            "src": "/public/(.*)",
+            "dest": "/public/$1"
         }
     ]
 }
