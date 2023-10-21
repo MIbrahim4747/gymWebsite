@@ -27,6 +27,7 @@ process.on("SIGINT", () => {
 });
 // ALL middleWares configuration====================================
 app.set("view engine", "ejs");
+app.set("views", "/var/task/views");
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: false }));
 app.use(
