@@ -9,43 +9,43 @@
     "routes": [
         {
             "src": "/api/main/.*",
-            "dest": "/routes/main.js"
+            "dest": "/routes/mainRouter.js"
         },
         {
             "src": "/api/login/.*",
-            "dest": "/routes/login.js"
+            "dest": "/routes/loginRouter.js"
         },
         {
             "src": "/api/registration/.*",
-            "dest": "/routes/registration.js"
+            "dest": "/routes/registrationRouter.js"
         },
         {
             "src": "/api/dashboard/.*",
-            "dest": "/routes/dashboard.js"
+            "dest": "/routes/dashboardRouter.js"
         },
         {
             "src": "/",
-            "dest": "/routes/main.js"
+            "dest": "/routes/mainRouter.js"
         },
         {
             "src": "/about",
-            "dest": "/routes/main.js"
+            "dest": "/routes/mainRouter.js"
         },
         {
             "src": "/services",
-            "dest": "/routes/main.js"
+            "dest": "/routes/mainRouter.js"
         },
         {
             "src": "/testimonials",
-            "dest": "/routes/main.js"
+            "dest": "/routes/mainRouter.js"
         },
         {
             "src": "/contact",
-            "dest": "/routes/main.js"
+            "dest": "/routes/mainRouter.js"
         },
         {
             "src": "/blog",
-            "dest": "/routes/main.js"
+            "dest": "/routes/mainRouter.js"
         },
         {
             "src": "/public/(.*)",
